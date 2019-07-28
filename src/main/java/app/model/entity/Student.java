@@ -3,7 +3,7 @@ package app.model.entity;
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.Date;
+import java.time.LocalDate;
 
 @Data
 @Entity
@@ -16,6 +16,6 @@ public class Student {
     private String universityIndex;
     private String firstName;
     private String lastName;
-    private Date birthdate;
+    private LocalDate birthdate;
     private String birthplace;
 }

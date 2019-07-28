@@ -16,6 +16,7 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 @RestController
+@CrossOrigin(origins = "http://localhost:4200")
 public class StudentController {
     private final StudentRepository repo;
     private final StudentResourceAssembler assembler;
